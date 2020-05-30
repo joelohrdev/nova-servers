@@ -12,8 +12,17 @@ class DomainList extends Component
 
     public $search = '';
     public $perPage = 25;
+    public $sortfield;
+    public $sortAsc = true;
 
-    public-+
+    public function sortBy($field)
+    {
+        if ($this->sortBy === $field) {
+            $this->sortAsc = ! $this->sortAsc;
+        } else {
+            $this->sortAsc = true;
+        }
+    }
 
     public function updatingSearch()
     {
